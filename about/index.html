@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>关于 - Hexo</title>
+  <title>关于 - 风轮的小屋</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
@@ -42,7 +42,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Hexo</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>风轮的小屋</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -131,7 +131,7 @@
           >
           
             <div class="about-avatar">
-              <img src="/img/avatar.png" srcset="/img/loading.gif"
+              <img src="/img/windwheel.jpg" srcset="/img/loading.gif"
                    class="img-fluid" alt="avatar">
             </div>
           
@@ -142,13 +142,12 @@
 
 <div class="text-center">
   <p class="h3">风轮</p>
-  <p>java后端/中间件/大数据/B端产品</p>
-  <p>在没有海图的海域上航行是需要勇气的，愿每一个夜晚都有漫天星光陪伴着我们</p>
+  <p>读书 / 产品</p>
   
     
     
     
-    <a href="https://github.com/complone" target="_blank" rel="noopener" class="h4 px-1 false">
+    <a href="https://github.com" target="_blank" rel="noopener" class="h4 px-1 false">
       <i class="fab fa-github" aria-hidden="true"></i>
       
     </a>
@@ -156,7 +155,7 @@
     
     
     
-    <a href="https://twitter.com/windwheel" target="_blank" rel="noopener" class="h4 px-1 false">
+    <a href="https://twitter.com" target="_blank" rel="noopener" class="h4 px-1 false">
       <i class="fab fa-twitter" aria-hidden="true"></i>
       
     </a>
@@ -165,7 +164,8 @@
     
 </div>
 <div class="mt-5 markdown-body">
-  
+  <p> <em>在没有海图的海域上航行是需要勇气的，愿每一个夜晚都有漫天星光陪伴着我们</em></p>
+
 </div>
 
               </div>
@@ -205,6 +205,29 @@
   </div>
 </div>
   
+
+  
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'true' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"name","artist":"artist","url":"/songs/four-season.mp3","cover":"/img/kaori.png"}]
+    });
+  }
+</script>
 
   
 
@@ -274,7 +297,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "自我介绍&nbsp;",
+        "关于&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

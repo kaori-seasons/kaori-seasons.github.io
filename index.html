@@ -144,6 +144,76 @@
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
+      <a href="/2020/04/04/exist-and-time/">
+        <p class="h4 index-header">书评：存在与时间第一章</p>
+      </a>
+
+      <a href="/2020/04/04/exist-and-time/" class="index-excerpt-wrap">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">
+  存在是普遍的概念，无论一个人从存在者处把握到什么，这种把握总已经包含了对于存在的某种领会，但存在本身是族类无法领会的，故存在的普遍性不是族类上的普遍性。                                                                                                                                          ——- 海德格尔
+
+wiki百科中存在的定义:  存在（英语：Existence），又译为实在、存有，是一个哲学概念，按照20世纪西方存在主义哲学家的定义，是具有难以</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-04&nbsp;&nbsp;
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a href="/2020/04/04/hate-songzi/">
+        <p class="h4 index-header">书评 被嫌弃的松子的一生</p>
+      </a>
+
+      <a href="/2020/04/04/hate-songzi/" class="index-excerpt-wrap">
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">
+生而为人，真对不起！（“生まれて すみません” ）
+
+&emsp;&emsp;第一次跟朋友的交谈中，无意中看到这句话。本以为是大众阶级对物质享受的欲望泛滥的畸形价值观体现。细细研读后有感，原来人们活的都不容易，想要为社会所适应并证明自己价值的人，活的比一般人辛苦得多.
+
+人的价值，不在于他得到什么，而是他可以给予别人什么。
+
+&emsp;&emsp;作为给予的一方，要想为对方付出某样东西，必须自己先拥有。假若我们手中空无一物，带给别人的只有满满的空虚和失望。在如今物欲横流的世界，能够换位思考的人愈来愈少。奉献在功利之辈看来，或许只是茶余饭后的举手之劳罢了。
+
+wiki 价值定义
+
+&emsp</div>
+        </div>
+      </a>
+
+      <div class="index-btm">
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-04&nbsp;&nbsp;
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
       <a href="/2020/04/04/look-share/">
         <p class="h4 index-header">书评 目送-龙应台</p>
       </a>
@@ -218,6 +288,29 @@
   
 
   
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'true' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"name","artist":"artist","url":"/songs/four-season.mp3","cover":"/img/kaori.png"}]
+    });
+  }
+</script>
+
+  
 
   
 
@@ -270,8 +363,8 @@
   <script>
     var typed = new Typed('#subtitle', {
       strings: [
-        ' 四月之初，与你相遇 ',
-        "&nbsp;",
+        '  ',
+        "四月之初，与你相遇&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
